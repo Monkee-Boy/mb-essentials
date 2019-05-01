@@ -22,6 +22,34 @@ function theme_setup() {
    * Enable support for responsive embeds with Gutenber.
    */
   add_theme_support( 'responsive-embeds' );
+
+  /**
+   * Enable support for Blocks that that support wide or full alignment.
+   *
+   * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#wide-alignment
+   */
+  add_theme_support( 'align-wide' );
+
+  /**
+   * Disable custom font sizes for Gutenberg Blocks.
+   *
+   * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#disabling-custom-font-sizes
+   */
+  add_theme_support( 'disable-custom-font-sizes' );
+
+  /**
+   * Disable custom colors for Gutenberg Blocks.
+   *
+   * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#disabling-custom-colors-in-block-color-palettes
+   */
+  add_theme_support( 'disable-custom-colors' );
+
+  /**
+   * Enable editor styles from your theme.
+   *
+   * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#editor-styles
+   */
+  add_theme_support('editor-styles');
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );

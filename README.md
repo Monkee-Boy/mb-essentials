@@ -14,6 +14,10 @@ WordPress plugin featuring basic tweaks and configuration common across our inst
 * Let WordPress manage the title tag.
 * Add support for post thumbnails.
 * Add support for responsive embeds with Gutenberg.
+* Add support for wide/full alignment with Gutenberg.
+* Disable custom font sizes in Gutenberg.
+* Disable custom colors in Gutenberg.
+* Enable editor styles in Gutenberg.
 * Clean up `wp_head` to remove clutter.
 * Move JavaScript files from the head to the footer.
 * Disable WP emojis.
