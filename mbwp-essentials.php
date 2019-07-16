@@ -3,10 +3,10 @@
  * Plugin Name: Monkee-Boy WP-Essentials
  * Plugin URI: https://github.com/Monkee-Boy/wp-essentials
  * Description: WordPress plugin featuring basic tweaks common across our installs.
- * Version 1.0
+ * Version: 1.0
  * Author: Monkee-Boy
  * Author URI: https://www.monkee-boy.com
- * License: MIT
+ * License: GPLv3
  */
 
 // If this file is called directly, abort.
