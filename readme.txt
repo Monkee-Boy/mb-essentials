@@ -57,5 +57,8 @@ Doing well, thanks for asking. How about you?
 
 == Changelog ==
 
+= 1.0.1 =
+* Removing js to footer as it conflicts with Gravity Forms.
+
 = 1.0 =
 * Initial release.

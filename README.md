@@ -19,7 +19,7 @@ WordPress plugin featuring basic tweaks and configuration common across our inst
 * Disable custom colors in Gutenberg.
 * Enable editor styles in Gutenberg.
 * Clean up `wp_head` to remove clutter.
-* Move JavaScript files from the head to the footer.
+* Move JavaScript files from the head to the footer. (removed for now)
 * Disable WP emojis.
 * Change default search to use /search/query/ instead of /?s=query.
 

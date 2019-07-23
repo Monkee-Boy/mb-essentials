@@ -3,7 +3,7 @@
  * Plugin Name: Monkee-Boy WP-Essentials
  * Plugin URI: https://github.com/Monkee-Boy/wp-essentials
  * Description: WordPress plugin featuring basic tweaks common across our installs.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Monkee-Boy
  * Author URI: https://www.monkee-boy.com
  * License: GPLv3
@@ -14,7 +14,7 @@ if ( !defined( 'WPINC' ) ) {
   die;
 }
 
-define( 'MBOY_WPESSENTIALS_VERSION', '1.0' );
+define( 'MBOY_WPESSENTIALS_VERSION', '1.0.1' );
 
 require_once __DIR__ . '/include/admin.php';
 require_once __DIR__ . '/include/plugin-gravityforms.php';
