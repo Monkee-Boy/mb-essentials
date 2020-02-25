@@ -73,7 +73,8 @@ function js_to_footer() {
   remove_action('wp_head', 'wp_enqueue_scripts', 1);
 }
 /* Gravity Forms doesn't like it when jQuery is in the footer. Need to rework this. */
-//add_action('wp_enqueue_scripts', __NAMESPACE__ . '\js_to_footer');
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\js_to_footer');
+add_filter('gform_init_scripts_footer', '__return_true');
 
 /**
  * Disable the emoji's
