@@ -72,9 +72,45 @@ function js_to_footer() {
   remove_action('wp_head', 'wp_print_head_scripts', 9);
   remove_action('wp_head', 'wp_enqueue_scripts', 1);
 }
-/* Gravity Forms doesn't like it when jQuery is in the footer. Need to rework this. */
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\js_to_footer');
+
+/**
+ * Move Gravity Forms scripts to footer
+ * See here: https://gist.github.com/eriteric/5d6ca5969a662339c4b3
+ */
 add_filter('gform_init_scripts_footer', '__return_true');
+add_filter( 'gform_cdata_open', __NAMESPACE__ . '\wrap_gform_cdata_open', 1 );
+add_filter( 'gform_cdata_close', __NAMESPACE__ . '\wrap_gform_cdata_close', 99 );
+
+function wrap_gform_cdata_open( $content = '' ) {
+	if ( ! do_wrap_gform_cdata() ) {
+		return $content;
+	}
+	$content = 'document.addEventListener( "DOMContentLoaded", function() { ' . $content;
+	return $content;
+}
+
+function wrap_gform_cdata_close( $content = '' ) {
+	if ( ! do_wrap_gform_cdata() ) {
+		return $content;
+	}
+	$content .= ' }, false );';
+	return $content;
+}
+
+function do_wrap_gform_cdata() {
+	if (
+		is_admin()
+		|| ( defined( 'DOING_AJAX' ) && DOING_AJAX )
+		|| isset( $_POST['gform_ajax'] )
+		|| isset( $_GET['gf_page'] ) // Admin page (eg. form preview).
+		|| doing_action( 'wp_footer' )
+		|| did_action( 'wp_footer' )
+	) {
+		return false;
+	}
+	return true;
+}
 
 /**
  * Disable the emoji's
