@@ -12,7 +12,7 @@ if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
 /**
  * Allow svg's to be uploaded through the Media Manager.
  */
-function add_file_types_to_uploads($file_types){
+function add_file_types_to_uploads($file_types) {
   $new_filetypes = array();
   $new_filetypes['svg'] = 'image/svg+xml';
   $file_types = array_merge($file_types, $new_filetypes );

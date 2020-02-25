@@ -19,12 +19,12 @@ function theme_setup() {
   add_theme_support( 'post-thumbnails' );
 
   /**
-   * Enable support for responsive embeds with Gutenber.
+   * Enable support for responsive embeds with Gutenberg.
    */
   add_theme_support( 'responsive-embeds' );
 
   /**
-   * Enable support for Blocks that that support wide or full alignment.
+   * Enable support for Blocks that support wide or full alignment.
    *
    * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#wide-alignment
    */
