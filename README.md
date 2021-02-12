@@ -1,6 +1,6 @@
 # Monkee-Boy Essentials
 
-![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/monkee-boy-wp-essentials?label=version) ![WordPress Plugin Last Updated](https://img.shields.io/wordpress/plugin/updated/monkee-boy-wp-essentials) ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/monkee-boy-wp-essentials)
+![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/monkee-boy-wp-essentials?label=version) ![WordPress Plugin Last Updated](https://img.shields.io/wordpress/plugin/last-updated/monkee-boy-wp-essentials?label=updated) ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/monkee-boy-wp-essentials)
 
 WordPress plugin featuring basic tweaks and configuration common across our installs. This includes modifications to the admin, removing WP clutter, and settings for common plugins (ACF, Gravity Forms, etc). See readme.txt for more details on features.
 
