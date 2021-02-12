@@ -76,7 +76,7 @@ function js_to_footer() {
 //add_action('wp_enqueue_scripts', __NAMESPACE__ . '\js_to_footer');
 
 /**
- * Disable the emoji's
+ * Disable the emoji's.
  */
 function disable_emojis() {
   remove_action( 'wp_head', 'print_emoji_detection_script', 7 );

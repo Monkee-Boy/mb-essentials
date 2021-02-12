@@ -31,3 +31,12 @@ function filter_admin_footer_text() {
 }
 
 add_filter( 'admin_footer_text', __NAMESPACE__ . '\filter_admin_footer_text' );
+
+/**
+ * Remove additional CSS under appearance.
+ */
+function customize_register( $wp_customize ) {
+   $wp_customize->remove_section('custom_css');
+}
+
+add_action( 'customize_register', __NAMESPACE__ . '\customize_register' );

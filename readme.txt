@@ -1,10 +1,10 @@
-=== Monkee-Boy WP-Essentials ===
+=== Monkee-Boy Essentials ===
 Contributors: monkeeboy, fleeting
 Tags: essentials
-Requires at least: 4.6
-Tested up to: 5.2.2
+Requires at least: 5.2
+Tested up to: 5.6.1
 Stable tag: trunk
-Requires PHP: 5.2.4
+Requires PHP: 7.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -41,12 +41,8 @@ Supports the following plugins:
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/mbwp-essentials` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+1. Upload the plugin to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Activate the plugin in your admin.
 1. Enjoy.
 
 == Frequently Asked Questions ==
@@ -56,6 +52,10 @@ e.g.
 Doing well, thanks for asking. How about you?
 
 == Changelog ==
+
+= 1.1 =
+* Clean up and name change.
+* Remove additional CSS section.
 
 = 1.0 =
 * Initial release.

@@ -1,4 +1,4 @@
-# Monkee-Boy WP-Essentials
+# Monkee-Boy Essentials
 
 WordPress plugin featuring basic tweaks and configuration common across our installs.
 
