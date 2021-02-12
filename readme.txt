@@ -1,6 +1,6 @@
 === Monkee-Boy Essentials ===
 Contributors: monkeeboy, fleeting
-Tags: essentials
+Tags: monkeeboy, monkee-boy, essentials
 Requires at least: 5.2
 Tested up to: 5.6.1
 Stable tag: trunk

@@ -1,35 +1,12 @@
 # Monkee-Boy Essentials
 
-WordPress plugin featuring basic tweaks and configuration common across our installs.
+![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/monkee-boy-wp-essentials?label=version) ![WordPress Plugin Last Updated](https://img.shields.io/wordpress/plugin/updated/monkee-boy-wp-essentials) ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/monkee-boy-wp-essentials)
 
-## What It Does
+WordPress plugin featuring basic tweaks and configuration common across our installs. This includes modifications to the admin, removing WP clutter, and settings for common plugins (ACF, Gravity Forms, etc). See readme.txt for more details on features.
 
-### WP-Admin
+### Release
 
-* Add support for uploading SVG into the media library.
-* Disable plugin and theme file editing from the admin.
-
-### Theme
-
-* Let WordPress manage the title tag.
-* Add support for post thumbnails.
-* Add support for responsive embeds with Gutenberg.
-* Add support for wide/full alignment with Gutenberg.
-* Disable custom font sizes in Gutenberg.
-* Disable custom colors in Gutenberg.
-* Enable editor styles in Gutenberg.
-* Clean up `wp_head` to remove clutter.
-* Move JavaScript files from the head to the footer.
-* Disable WP emojis.
-* Change default search to use /search/query/ instead of /?s=query.
-
-### Plugins
-
-* Gravity Forms
-  * After form submission, scroll to confirmation/validation anchor.
-* Advanced Custom Fields
-  * Remove the default WP custom fields section.
-  * Add options page to be used for general theme options/content.
+To release a new version to the wordpress.org Plugin Directory; push to the `main` branch, create a new tag with the version number (Ex: `git tag -a 1.1.3 -m "Releasing v1.1.3" && git push origin 1.1.3`), and the GH Action will auto deploy it to the directory. You can verify a successful deploy from the actions panel on the repo or checking the [plugin website](https://wordpress.org/plugins/monkee-boy-wp-essentials/).
 
 
 ![Monkee-Boy](http://assets.monkee-boy.com/mboy-logo-tagline.jpg)
