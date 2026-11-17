@@ -3,7 +3,7 @@ Contributors: monkeeboy, fleeting
 Tags: monkeeboy, monkee-boy, essentials
 Requires at least: 5.2
 Tested up to: 5.6.1
-Stable tag: trunk
+Stable tag: 1.2
 Requires PHP: 7.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -14,7 +14,7 @@ WordPress plugin featuring basic tweaks and configuration common across our inst
 
 In the WordPress Admin:
 
-* Add support for uploading SVG into the media library.
+* Add support for uploading SVG into the media library (trusted users only; every SVG is sanitized on upload).
 * Disable plugin and theme file editing from the admin.
 
 In the current theme:
@@ -52,6 +52,10 @@ Supports the following plugins:
 Doing well, thanks for asking. How about you?
 
 == Changelog ==
+
+= 1.2 =
+* Security: Fix authenticated (Author+) stored XSS via SVG uploads. SVG uploads are now limited to users with the `unfiltered_html` capability (filter: `mboy_essentials_svg_upload_capability`) and every SVG is sanitized with enshrined/svg-sanitize.
+* Add `wp mboy-svg scan [--fix]` WP-CLI command to audit previously uploaded SVGs.
 
 = 1.1 =
 * Clean up and name change.

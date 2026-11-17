@@ -10,17 +10,8 @@ if ( ! defined( 'DISALLOW_FILE_EDIT' ) ) {
 }
 
 /**
- * Allow svg's to be uploaded through the Media Manager.
+ * SVG upload support now lives in include/svg.php (restricted + sanitized).
  */
-function add_file_types_to_uploads($file_types){
-  $new_filetypes = array();
-  $new_filetypes['svg'] = 'image/svg+xml';
-  $file_types = array_merge($file_types, $new_filetypes );
-
-  return $file_types;
-}
-
-add_action('upload_mimes', __NAMESPACE__ . '\add_file_types_to_uploads');
 
 /**
  * Filter admin footer text "Thank you for creating..."
